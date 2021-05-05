@@ -28,5 +28,8 @@
 		"transform-runtime": "0.0.0",
 		"uglify-js": "github:mishoo/UglifyJS2#harmony",
 		"webp-converter": "2.2.3"
+	},
+	"dependencies": {
+		"gulp-cli": "^2.3.0"
 	}
 }

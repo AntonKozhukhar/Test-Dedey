@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "Avenir";
+  font-display: swap;
+  src: url("../fonts/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FiraSans";
+  font-display: swap;
+  src: url("../fonts/FiraSans-BoldItalic.woff") format("woff"), url("../fonts/FiraSans-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-display: swap;
+  src: url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-calendar:before {
+  content: "\e900";
+}
+
+._icon-location:before {
+  content: "\e901";
+}
+
+._icon-calendar:before,
+._icon-location:before {
+  font-size: 22px;
+  font-weight: 900;
+  color: #fdb038;
+  margin-right: 7px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: MyriadPro;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: MyriadPro;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #000;
+  font-size: 13px;
+  background: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.travel__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.travel__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.travel__place {
+  border-right: 2px solid #e9e9e9;
+}
+
+.travel__place input {
+  font-family: FiraSans;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #6b6b6b;
+  padding-right: 10px;
+}
+
+.travel__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8px;
+}
+
+.travel__dates {
+  font-family: ProximaNova;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 2px solid #e9e9e9;
+}
+
+.travel__date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.travel__date-wrapper:first-child {
+  margin-right: 10px;
+}
+
+.travel__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.travel__date-title {
+  margin-bottom: 8px;
+}
+
+.travel__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 30px;
+}
+
+.travel__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+  position: relative;
+}
+
+.travel__option:last-child {
+  margin-right: 0;
+}
+
+.travel__option input {
+  border: 1px solid #8b9198;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  padding: 7px;
+  font-family: Avenir;
+  font-size: 16px;
+  color: #8b9198;
+  position: relative;
+}
+
+.travel__option input::-webkit-inner-spin-button,
+.travel__option input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.travel__buttons button {
+  position: absolute;
+  left: 30px;
+  background: transparent;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+.travel__buttons button:first-child {
+  border-bottom: 7px solid #8b9198;
+  top: 12px;
+}
+
+.travel__buttons button:first-child._active {
+  border-bottom: 7px solid #fdb038;
+}
+
+.travel__buttons button:last-child {
+  border-top: 7px solid #8b9198;
+  bottom: -5px;
+}
+
+.travel__buttons button:last-child._active {
+  border-top: 7px solid #fdb038;
+}
+
+.travel__plus {
+  background: #fed18c;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0 30px 0 15px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.travel__plus::before,
+.travel__plus::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  background: #fff;
+  height: 5px;
+  width: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.travel__plus::after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.travel__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.travel__search {
+  width: 225px;
+  height: 75px;
+  background: #ed9915;
+  font-family: ProximaNova;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+select {
+  font-family: FiraSans;
+  font-size: 18px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+  .travel__buttons button:first-child:active {
+    border-bottom: 7px solid #ff5100;
+  }
+
+  .travel__buttons button:last-child:active {
+    border-top: 7px solid #ff9d00;
+  }
+
+  .travel__plus:hover {
+    background: #fdb038;
+  }
+
+  .travel__search:hover {
+    background: #fdb038;
+  }
+}
+
+@media (max-width: 1212px) {
+  .travel {
+    text-align: center;
+  }
+
+  .travel__form {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+  }
+
+  .travel__block:first-child {
+    margin-bottom: 30px;
+  }
+
+  .travel__dates:last-child {
+    padding-right: 0;
+    border: none;
+  }
+
+  .travel__options {
+    padding: 0;
+  }
+
+  .travel__plus {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .travel__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+
+  .travel__place input {
+    padding: 0;
+  }
+
+  .travel__place {
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  .travel__dates {
+    padding-left: 0;
+  }
+
+  .travel__options {
+    margin-bottom: 30px;
+  }
+
+  .travel__btns button:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .travel__form {
+    padding: 10px 5px;
+  }
+
+  .travel__search {
+    width: 200px;
+    height: 60px;
+  }
+
+  select {
+    padding: 0;
+  }
+}

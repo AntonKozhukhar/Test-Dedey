@@ -1,0 +1,225 @@
+.travel {
+  @media (max-width:$md1+px){
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: $md1+px) {
+      display: inline-flex;
+      flex-direction: column;
+      text-align: start;
+    }
+    @media (max-width:$md4+px){
+      padding: 10px 5px;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $md1+px) {
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+    @media (max-width:$md3+px){
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__place {
+    border-right: 2px solid #e9e9e9;
+    input {
+      font-family: FiraSans;
+      font-size: 20px;
+      margin-top: 5px;
+      color: #6b6b6b;
+      padding-right: 10px;
+      @media (max-width:$md3+px){
+        padding: 0;
+      }
+    }
+    @media (max-width:$md3+px){
+      margin-bottom: 30px;
+      border: none;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  &__dates {
+    font-family: ProximaNova;
+    display: flex;
+    padding: 0 25px;
+    align-items: center;
+    border-right: 2px solid #e9e9e9;
+    @media (max-width: $md1+px) {
+      &:last-child {
+        padding-right: 0;
+        border: none;
+      }
+    }
+    @media (max-width:$md3+px){
+      padding-left: 0;
+    }
+  }
+  &__date-wrapper {
+    display: flex;
+    flex-direction: column;
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+  &__date {
+    display: flex;
+  }
+  &__date-title {
+    margin-bottom: 8px;
+  }
+  &__options {
+    display: flex;
+    padding: 0 30px;
+    @media (max-width: $md1+px) {
+      padding: 0;
+    }
+    @media (max-width:$md3+px){
+      margin-bottom: 30px;
+    }
+  }
+  &__option {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+    input {
+      border: 1px solid #8b9198;
+      width: 25px;
+      height: 25px;
+      margin-top: 5px;
+      padding: 7px;
+      font-family: Avenir;
+      font-size: 16px;
+      color: #8b9198;
+      position: relative;
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+  }
+  &__buttons {
+    button {
+      position: absolute;
+      left: 30px;
+      background: transparent;
+      border: 5px solid transparent;
+      cursor: pointer;
+      &:first-child {
+        border-bottom: 7px solid #8b9198;
+        top: 12px;
+        &._active {
+          border-bottom: 7px solid #fdb038;
+        }
+        @media (min-width: $md3+px) {
+          &:active {
+            border-bottom: 7px solid #ff5100;
+          }
+        }
+      }
+      &:last-child {
+        border-top: 7px solid #8b9198;
+        bottom: -5px;
+        &._active {
+          border-top: 7px solid #fdb038;
+        }
+        @media (min-width: $md3+px) {
+          &:active {
+            border-top: 7px solid #ff9d00;
+          }
+        }
+      }
+    }
+  }
+  &__plus {
+    background: #fed18c;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 30px 0 15px;
+    position: relative;
+    transition: 0.3s;
+    @media (max-width:$md1+px){
+      margin-left: 30px;
+    }
+    @media (min-width: $md3+px) {
+      &:hover {
+        background: #fdb038;
+      }
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 5px;
+      background: #fff;
+      height: 5px;
+      width: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    button {
+      &:first-child {
+        @media (max-width:$md3+px){
+          margin-left: 0;
+        }
+      }
+    }
+    
+  }
+  &__search {
+    width: 225px;
+    height: 75px;
+    background: #ed9915;
+    font-family: ProximaNova;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s;
+    @media (min-width: $md3+px) {
+      &:hover {
+        background: #fdb038;
+      }
+    }
+    @media (max-width:$md4+px){
+      width: 200px;
+      height: 60px;
+    }
+  }
+}
+
+select {
+  font-family: FiraSans;
+  font-size: 18px;
+  cursor: pointer;
+  padding-right: 10px;
+  @media (max-width:$md4+px){
+    padding: 0;
+  }
+}

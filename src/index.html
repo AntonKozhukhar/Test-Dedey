@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{ "title":"Travel" })
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<section class="travel _container">
+					<form class="travel__form" name="form">
+						<div class="travel__block">
+							<div class="travel__place">
+								<span>Место или название отеля</span>
+								<div class="travel__location">
+									<span class="_icon-location"></span>
+									<input type="text" placeholder="Введите здесь место" />
+								</div>
+							</div>
+							<div class="travel__dates">
+								<div class="travel__date-wrapper">
+									<span class="travel__date-title">Заезд</span>
+									<div class="travel__date">
+										<span class="_icon-calendar"></span>
+										<select name="from" id="">
+											<option value="">1 мая</option>
+										</select>
+									</div>
+								</div>
+								<div class="travel__date-wrapper">
+									<span class="travel__date-title">Выезд</span>
+									<select name="to" id="">
+										<option value="">1 мая</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="travel__block">
+							<div class="travel__options">
+								<div class="travel__option">
+									<span>Номера</span>
+									<input type="number" value="0" />
+									<div class="travel__buttons">
+										<button class="up"></button>
+										<button class="down"></button>
+									</div>
+								</div>
+								<div class="travel__option">
+									<span>Взрослые</span>
+									<input type="number" value="0" />
+									<div class="travel__buttons">
+										<button class="up"></button>
+										<button class="down"></button>
+									</div>
+								</div>
+								<div class="travel__option">
+									<span>Дети</span>
+									<input type="number" value="0" />
+									<div class="travel__buttons">
+										<button class="up"></button>
+										<button class="down"></button>
+									</div>
+								</div>
+							</div>
+							<div class="travel__btns">
+								<button class="travel__plus"></button>
+								<button type="submit" class="travel__search">
+									Найти
+								</button>
+							</div>
+						</div>
+					</form>
+				</section>
+			</main>
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>

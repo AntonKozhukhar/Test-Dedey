@@ -1,0 +1,32 @@
+{
+	"name": "Anton's-gulp",
+	"version": "1.0.0",
+	"description": "Start template with Gulp",
+	"author": "Anton Kozhukhar",
+	"private": true,
+	"license": "GNU General Public License (GPL)",
+	"devDependencies": {
+		"browser-sync": "latest",
+		"del": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-newer": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-sass": "^4.1.0",
+		"gulp-ttf2woff": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-uglify-es": "^2.0.0",
+		"gulp-webp-html": "latest",
+		"gulp-webpcss": "latest",
+		"imagemin-webp": "latest",
+		"transform-runtime": "0.0.0",
+		"uglify-js": "github:mishoo/UglifyJS2#harmony",
+		"webp-converter": "2.2.3"
+	}
+}
